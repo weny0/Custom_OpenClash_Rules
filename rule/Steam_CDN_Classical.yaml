@@ -1,9 +1,5 @@
-# Generated from rule/Steam_CDN.list
-# REPO: https://github.com/weny0/Custom_OpenClash_Rules
-# SOURCE: https://github.com/weny0/Custom_OpenClash_Rules/blob/main/rule/Steam_CDN.list
-# TOTAL: 26
-
 payload:
+  # --- 源 1: Steam_CDN (包含下载 CDN 及 IP 段) ---
   - DOMAIN-SUFFIX,cm.steampowered.com
   - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
   - DOMAIN-SUFFIX,steamserver.net
@@ -30,3 +26,20 @@ payload:
   - IP-CIDR,208.64.200.0/22,no-resolve
   - IP-CIDR,208.78.164.0/22,no-resolve
   - IP-CIDR,45.121.184.0/24,no-resolve
+  
+  # --- 源 2: SteamCN (国服及其他 CDN) ---
+  - DOMAIN,csgo.wmsj.cn
+  - DOMAIN,dl.steam.clngaa.com
+  - DOMAIN,dl.steam.ksyna.com
+  - DOMAIN,dota2.wmsj.cn
+  - DOMAIN,st.dl.bscstorage.net
+  - DOMAIN,st.dl.eccdnx.com
+  - DOMAIN,st.dl.pinyuncloud.com
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com
+  - DOMAIN,steampowered.com.8686c.com
+  - DOMAIN,steamstatic.com.8686c.com
+  - DOMAIN,wmsjsteam.com
+  - DOMAIN,xz.pphimalayanrt.com
+  - DOMAIN-SUFFIX,steamchina.com
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steamusercontent.com
