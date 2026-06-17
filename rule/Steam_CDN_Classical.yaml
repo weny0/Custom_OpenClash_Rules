@@ -1,8 +1,27 @@
 payload:
-  # --- 源 1: Steam_CDN (包含下载 CDN 及 IP 段) ---
+  # --- 1. Steam 系列综合 (包含全球 CDN、IP 段、蒸汽平台) ---
   - DOMAIN-SUFFIX,cm.steampowered.com
   - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
   - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,steamchina.com
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steamusercontent.com
+  - DOMAIN-SUFFIX,dl.steam.ksyna.com
+  - DOMAIN-SUFFIX,st.dl.eccdnx.com
+  - DOMAIN-SUFFIX,st.dl.bscstorage.net
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+  - DOMAIN-SUFFIX,cdn.mileweb.cs.steampowered.com.8686c.com
+  - DOMAIN,csgo.wmsj.cn
+  - DOMAIN,dota2.wmsj.cn
+  - DOMAIN,dl.steam.clngaa.com
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com
+  - DOMAIN,steampowered.com.8686c.com
+  - DOMAIN,steamstatic.com.8686c.com
+  - DOMAIN,wmsjsteam.com
+  - DOMAIN,xz.pphimalayanrt.com
+  - DOMAIN,cdn-ali.content.steamchina.com
+  - DOMAIN,cdn-qc.content.steamchina.com
+  - DOMAIN,cdn-ws.content.steamchina.com
   - IP-CIDR,103.10.124.0/23,no-resolve
   - IP-CIDR,103.28.54.0/24,no-resolve
   - IP-CIDR,146.66.152.0/24,no-resolve
@@ -26,20 +45,29 @@ payload:
   - IP-CIDR,208.64.200.0/22,no-resolve
   - IP-CIDR,208.78.164.0/22,no-resolve
   - IP-CIDR,45.121.184.0/24,no-resolve
-  
-  # --- 源 2: SteamCN (国服及其他 CDN) ---
-  - DOMAIN,csgo.wmsj.cn
-  - DOMAIN,dl.steam.clngaa.com
-  - DOMAIN,dl.steam.ksyna.com
-  - DOMAIN,dota2.wmsj.cn
-  - DOMAIN,st.dl.bscstorage.net
-  - DOMAIN,st.dl.eccdnx.com
-  - DOMAIN,st.dl.pinyuncloud.com
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com
-  - DOMAIN,steampowered.com.8686c.com
-  - DOMAIN,steamstatic.com.8686c.com
-  - DOMAIN,wmsjsteam.com
-  - DOMAIN,xz.pphimalayanrt.com
-  - DOMAIN-SUFFIX,steamchina.com
-  - DOMAIN-SUFFIX,steamcontent.com
-  - DOMAIN-SUFFIX,steamusercontent.com
+
+  # --- 2. 微软/Xbox 系列下载 ---
+  - DOMAIN,assets1.xboxlive.com
+  - DOMAIN,assets2.xboxlive.com
+  - DOMAIN,assets1.xboxlive.cn
+  - DOMAIN,assets2.xboxlive.cn
+  - DOMAIN,dl.delivery.mp.microsoft.com
+  - DOMAIN,tlu.dl.delivery.mp.microsoft.com
+  - DOMAIN,packagespc.xboxlive.com
+  - DOMAIN,xvcf1.xboxlive.com
+  - DOMAIN,xvcf2.xboxlive.com
+
+  # --- 3. Ubisoft (Uplay) 系列 ---
+  - DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
+  - DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
+  - DOMAIN-SUFFIX,cdn.ubi.com
+
+  # --- 4. EA (Origin) 系列 ---
+  - DOMAIN,origin-a.akamaihd.net
+  - DOMAIN-SUFFIX,ssl-lvlt.cdn.ea.com
+
+  # --- 5. 其他厂商 (暴雪/Epic/Riot) ---
+  - DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
+  - DOMAIN,trts.baishancdnx.cn
+  - DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
+  - DOMAIN-SUFFIX,dyn.riotcdn.net
